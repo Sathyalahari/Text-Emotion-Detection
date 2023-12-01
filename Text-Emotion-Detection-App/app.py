@@ -9,8 +9,10 @@ import pickle
 
 # pipe_lr = joblib.load("text_emotion.pkl")
 
-pipe_lr = pickle.load(open('emotion_model.pkl', 'rb'))
+# pipe_lr = pickle.load(open('emotion_model.pkl', 'rb'))
 
+pickle_path = 'https://github.com/Sathyalahari/TextEmotionDetection/blob/main/Text-Emotion-Detection-App/emotion_model.pkl'
+pipe_lr = pickle.load(open(pickle_path, 'rb'))
 
 emotions_emoji_dict = {"anger": "😠", "disgust": "🤮", "fear": "😨😱", "happy": "🤗", "joy": "😂", "neutral": "😐", "sad": "😔",
                        "sadness": "😔", "shame": "😳", "surprise": "😮"}
