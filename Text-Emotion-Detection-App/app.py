@@ -3,10 +3,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt
+import pickle
 
-import joblib
+# import joblib
 
-pipe_lr = joblib.load("text_emotion.pkl")
+# pipe_lr = joblib.load("text_emotion.pkl")
+
+pipe_lr = pickle.load(open('emotion_model.pkl', 'rb'))
+
 
 emotions_emoji_dict = {"anger": "😠", "disgust": "🤮", "fear": "😨😱", "happy": "🤗", "joy": "😂", "neutral": "😐", "sad": "😔",
                        "sadness": "😔", "shame": "😳", "surprise": "😮"}
