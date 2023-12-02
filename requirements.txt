@@ -4,3 +4,5 @@ pandas
 seaborn
 joblib
 azure-storage-blob
+scikit-learn
+pickle
