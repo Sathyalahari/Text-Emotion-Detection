@@ -3,3 +3,4 @@ numpy
 pandas
 seaborn
 joblib
+azure-storage-blob
